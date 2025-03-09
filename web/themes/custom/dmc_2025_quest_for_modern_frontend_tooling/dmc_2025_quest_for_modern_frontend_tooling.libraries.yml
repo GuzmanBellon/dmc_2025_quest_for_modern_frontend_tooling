@@ -1,3 +1,12 @@
+global-styling:
+  version: VERSION
+  vite:
+    enabled: true
+  js:
+    src/main.js: {}
+  css:
+    component:
+      src/main.css: {}
 base:
   version: VERSION
   css:

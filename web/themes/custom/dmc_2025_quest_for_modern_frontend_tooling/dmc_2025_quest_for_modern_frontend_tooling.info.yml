@@ -2,10 +2,10 @@ name: DMC 2025 A Quest for modern frontend tooling theme
 type: theme
 'base theme': stable9
 version: 1.0.0
+dependencies:
+  - vite:vite
 libraries:
-  - dmc_2025_quest_for_modern_frontend_tooling/base
-  - dmc_2025_quest_for_modern_frontend_tooling/messages
-  - core/normalize
+  - dmc_2025_quest_for_modern_frontend_tooling/global-styling
 libraries-extend:
   user/drupal.user:
     - dmc_2025_quest_for_modern_frontend_tooling/user
