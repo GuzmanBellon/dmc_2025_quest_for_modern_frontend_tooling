@@ -1,0 +1,18 @@
+# ide
+.idea
+.vs-code
+
+# Ignore non-custom parts of Drupal.
+/web/core
+/web/libraries
+/web/modules/contrib
+/web/profiles
+/web/themes/contrib
+/recipes
+/web/sites/default/files
+
+# Ignore Composer-managed dependencies.
+vendor/
+
+# Ignore NPM-managed dependencies.
+node_modules/

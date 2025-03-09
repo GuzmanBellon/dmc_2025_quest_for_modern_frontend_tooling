@@ -1,0 +1,22 @@
+name: DMC 2025 A Quest for modern frontend tooling theme
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - dmc_2025_quest_for_modern_frontend_tooling/base
+  - dmc_2025_quest_for_modern_frontend_tooling/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - dmc_2025_quest_for_modern_frontend_tooling/user
+  core/drupal.dropbutton:
+    - dmc_2025_quest_for_modern_frontend_tooling/dropbutton
+  core/drupal.dialog:
+    - dmc_2025_quest_for_modern_frontend_tooling/dialog
+  file/drupal.file:
+    - dmc_2025_quest_for_modern_frontend_tooling/file
+  core/drupal.progress:
+    - dmc_2025_quest_for_modern_frontend_tooling/progress
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.1.4'

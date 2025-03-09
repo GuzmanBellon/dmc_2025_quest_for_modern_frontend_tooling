@@ -1,0 +1,1 @@
+dmc_2025_quest_for_modern_frontend_tooling theme, generated from starterkit_theme. Additional information on generating themes can be found in the [Starterkit documentation](https://www.drupal.org/docs/core-modules-and-themes/core-themes/starterkit-theme).
