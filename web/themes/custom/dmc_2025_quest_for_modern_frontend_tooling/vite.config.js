@@ -1,13 +1,22 @@
 import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-import { resolve } from 'node:path'
+import twig from 'vite-plugin-twig-drupal'
+import { resolve, join } from 'node:path'
 
 const port = 5173
 const origin = `${process.env.DDEV_PRIMARY_URL}:${port}`
 
 export default defineConfig({
   plugins: [
-    tailwindcss(),
+    twig({
+      namespaces: {
+        dmc_2025_quest_for_modern_frontend_tooling: join(__dirname, '/components')
+      },
+      globalContext: {
+        // Global variables that should be present in all templates.
+        active_theme: 'dmc_2025_quest_for_modern_frontend_tooling',
+        is_front_page: false,
+      },
+    }),
   ],
   build: {
     manifest: true,

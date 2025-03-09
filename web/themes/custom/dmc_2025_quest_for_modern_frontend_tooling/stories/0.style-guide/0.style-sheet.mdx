@@ -1,0 +1,21 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import logo from '../../logo.svg';
+
+<Meta title="Style Guide/Stylesheet" />
+
+# Drupal Mountain Camp 2025 A Quest for modern frontend tooling
+
+## Branding
+
+**logo**
+<div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '2rem', padding: '2rem'}}>
+  <img src={logo} alt="Logo" style={{width: '360px'}}/>
+  <img src={logo} alt="Logo" style={{width: '120px'}}/>
+</div>
+
+**colors**
+<ColorPalette>
+  <ColorItem title="Primary" subtitle="Blue" colors={['#007CBA']} />
+  <ColorItem title="Secondary" subtitle="Orange" colors={['#FFA500']} />
+  <ColorItem title="Tertiary" subtitle="Green" colors={['#00A870']} />
+</ColorPalette>
