@@ -7,22 +7,33 @@ an example of theme developments base on modern frontend tooling
 1. install drupal cms
 
 ```shell
+ddev start
 ddev composer install
-ddev drush launch
+ddev launch
 ```
+And finalize the installation with the Drupal CMS installer.
 
-2. install theme (or not)
+2. install the [vite module](https://www.drupal.org/project/vite)
+```shell
+ddev drush pm:install vite
+```
+for more about the integration with ddev check [Example usage using DDEV](https://www.drupal.org/docs/extending-drupal/contributed-modules/contributed-module-documentation/vite/example-usage-using-ddev)
+
+3. install theme (or not)
 ```shell
 ddev drush theme:enable dmc_2025_quest_for_modern_frontend_tooling
 ```
 
-3. complie the assets
+4. compile the assets
 ```shell
 cd web/themes/custom/dmc_2025_quest_for_modern_frontend_tooling
 ddev npm install
 ddev npm run build
 ddev drush cr
 ```
+
+5. eventually go [here](https://dmc2025-quest-for-modern-frontend-tooling-1.ddev.site/admin/appearance) and make `dmc_2025_quest_for_modern_frontend_tooling` the default theme
+
 
 ## Development
 
@@ -34,8 +45,8 @@ cd web/themes/custom/dmc_2025_quest_for_modern_frontend_tooling
 npm run storybook
 ```
 
-2. Create stories and develop components outside of drupal
-3. Enjoy HMR and out-of-my-way DX
+2. Create stories in `/stories` and develop components outside of drupal
+3. Enjoy HMR and an out-of-my-way DX
 
 ### Integration with Drupal
 
