@@ -4,20 +4,18 @@ an example of theme developments base on modern frontend tooling
 
 ## Installation
 
-1. install drupal cms
+1. install drupal cms with the Drupal CMS installer.
 
 ```shell
 ddev start
 ddev composer install
 ddev launch
 ```
-And finalize the installation with the Drupal CMS installer.
 
-2. install the [vite module](https://www.drupal.org/project/vite)
+2. install the [vite module](https://www.drupal.org/project/vite) (for more about the integration with ddev check [Example usage using DDEV](https://www.drupal.org/docs/extending-drupal/contributed-modules/contributed-module-documentation/vite/example-usage-using-ddev))
 ```shell
 ddev drush pm:install vite
 ```
-for more about the integration with ddev check [Example usage using DDEV](https://www.drupal.org/docs/extending-drupal/contributed-modules/contributed-module-documentation/vite/example-usage-using-ddev)
 
 3. install theme (or not)
 ```shell
